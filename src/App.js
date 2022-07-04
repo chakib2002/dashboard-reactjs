@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter, routes, route, Routes, Route} from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-
+import './App.css';
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
 
@@ -19,7 +19,7 @@ const App = () => {
             <TooltipComponent content="settings" position="Top">
               <button type='button'
               className='text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white'
-              style={{background : 'blue', borderRadius:'50%'}}
+              style={{background : 'green', borderRadius:'50%'}}
               >
 
                 <FiSettings />
@@ -30,7 +30,7 @@ const App = () => {
         <div>
           {activeMenu ?(
             <div className='w-72 fixed dark:bg-secondary-dark-bg bg-white'>
-              Sidebar
+              <Sidebar/>
             </div>
           ) : (
             <div className='w-0 dark:bg-secondary-dark-bg'>
