@@ -22,7 +22,7 @@ const Sidebar = () => {
 
 
   return (
-    <div className='ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10 mt-16 md:mt-0'>
+    <div className='ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10 mt-16 md:mt-0 z-50'>
       {activeMenu && (<>
         <div className='flex justify-between items-center '>
           <Link to ="/" onClick={()=>{}} 
